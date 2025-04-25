@@ -12,3 +12,9 @@ Template code for setting up a Paper plugin.
 
 I use this for my personal work.
 You may use it too, if you find it useful.
+
+## Thanks to
+
+[PaperMC](https://github.com/PaperMC) for the [Paper](https://github.com/PaperMC/Paper) server software.
+
+[jpenilla](https://github.com/jpenilla) for [resource-factory](https://github.com/jpenilla/resource-factory) and [run-task](https://github.com/jpenilla/run-task).
