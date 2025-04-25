@@ -1,0 +1,16 @@
+[versions]
+paperApi = "1.21.4-R0.1-SNAPSHOT"
+runTask = "2.3.1"
+resourceFactory = "1.2.0"
+
+[libraries.paperApi]
+module = "io.papermc.paper:paper-api"
+version.ref = "paperApi"
+
+[plugins.runPaper]
+id = "xyz.jpenilla.run-paper"
+version.ref = "runTask"
+
+[plugins.resourceFactory]
+id = "xyz.jpenilla.resource-factory"
+version.ref = "resourceFactory"
