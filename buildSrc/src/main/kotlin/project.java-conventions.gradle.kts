@@ -2,7 +2,7 @@ plugins {
     java
 }
 
-description = "Minecraft plugin making crossbows configurable"
+description = providers.gradleProperty("description").get()
 group = providers.gradleProperty("group").get()
 version = providers.gradleProperty("version").get()
 
