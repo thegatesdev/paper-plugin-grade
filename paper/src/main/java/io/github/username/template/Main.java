@@ -1,5 +1,6 @@
 package io.github.username.template;
 
+import io.github.username.template.log.*;
 import net.kyori.adventure.text.logger.slf4j.*;
 import org.bukkit.plugin.java.*;
 

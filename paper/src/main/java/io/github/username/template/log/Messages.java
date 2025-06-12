@@ -1,4 +1,4 @@
-package io.github.username.template;
+package io.github.username.template.log;
 
 import net.kyori.adventure.text.*;
 

@@ -1,5 +1,6 @@
 package io.github.username.template;
 
+import io.github.username.template.command.*;
 import io.papermc.paper.plugin.bootstrap.*;
 import io.papermc.paper.plugin.lifecycle.event.*;
 import io.papermc.paper.plugin.lifecycle.event.handler.configuration.*;
