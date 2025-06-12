@@ -5,6 +5,10 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### Plugin tooling ###
+
+*/run/
+
 ### IntelliJ IDEA ###
 .idea/
 *.iws
@@ -38,4 +42,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-/paper/run/
