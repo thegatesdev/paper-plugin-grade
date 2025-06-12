@@ -6,3 +6,7 @@ repositories {
     mavenCentral()
     gradlePluginPortal()
 }
+
+kotlin {
+    jvmToolchain(21)
+}
