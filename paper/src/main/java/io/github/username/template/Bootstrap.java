@@ -13,20 +13,20 @@ import java.util.concurrent.*;
 @SuppressWarnings({"UnstableApiUsage", "unused"})
 public final class Bootstrap implements PluginBootstrap {
 
+    private static LifecycleEventHandlerConfiguration<@NotNull LifecycleEventOwner> createCommandsEventHandler() {
+        var command = CompletableFuture.supplyAsync(Command::create);
+        return LifecycleEvents.COMMANDS.newHandler(event -> event.registrar().register(command.join()));
+    }
+
+
     @Override
     public void bootstrap(@NotNull BootstrapContext context) {
         var lifecycleManager = context.getLifecycleManager();
-        lifecycleManager.registerEventHandler(commandsHandler());
+        lifecycleManager.registerEventHandler(createCommandsEventHandler());
     }
 
     @Override
     public @NotNull JavaPlugin createPlugin(@NotNull PluginProviderContext context) {
         return new Main(context.getLogger());
-    }
-
-
-    private static LifecycleEventHandlerConfiguration<@NotNull LifecycleEventOwner> commandsHandler() {
-        var command = CompletableFuture.supplyAsync(Command::create);
-        return LifecycleEvents.COMMANDS.newHandler(event -> event.registrar().register(command.join()));
     }
 }
