@@ -1,6 +1,8 @@
 # Paper plugin template
 
-Template code for setting up a Paper plugin.
+Template code for setting up a `1.21.5` Paper plugin.
+
+## Contents
 
 - Bootstrapper setup
 - Brigadier command setup
