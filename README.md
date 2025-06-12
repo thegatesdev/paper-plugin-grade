@@ -2,6 +2,13 @@
 
 Template code for setting up a `1.21.5` Paper plugin.
 
+I use this for my personal work.
+You may use it too, if you find it useful.
+Keep in mind this is an overengineered template.
+Consider only using this as inspiration.
+
+A simple Maven setup will often suffice.
+
 ## Contents
 
 - Bootstrapper setup
@@ -12,8 +19,15 @@ Template code for setting up a `1.21.5` Paper plugin.
 - Dependencies configured with `libs.versions.toml`
 - Build logic stuffed away in convention plugins
 
-I use this for my personal work.
-You may use it too, if you find it useful.
+## Rebrand
+
+Files to insert your plugin's branding:
+
+| Location                | Edit               |
+|-------------------------|--------------------|
+| `./settings.gradle.kts` | `rootProject.name` |
+| `./gradle.properties`   | All properties     |
+| `./paper/src/main/java` | Package name       |
 
 ## Thanks to
 
