@@ -1,4 +1,4 @@
 plugins {
-    id("project.java-conventions")
-    id("project.paper-conventions")
+    project.`java-conventions`
+    project.`paper-conventions`
 }
