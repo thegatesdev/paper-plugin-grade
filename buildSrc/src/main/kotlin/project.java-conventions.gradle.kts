@@ -2,9 +2,9 @@ plugins {
     java
 }
 
-description = providers.gradleProperty("description").getOrNull()
-group = providers.gradleProperty("group").get()
-version = providers.gradleProperty("version").get()
+description = findProperty("description")?.toString()
+group = property("group").toString()
+version = property("version").toString()
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(21))

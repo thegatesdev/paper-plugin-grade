@@ -35,12 +35,11 @@ sourceSets.main {
     }
 }
 
-fun prop(propertyName: String): Provider<String> {
-    return providers.gradleProperty(propertyName)
+fun prop(propertyName: String): String? {
+    return findProperty(propertyName)?.toString()
 }
 
-fun propClass(propertyName: String): Provider<String> {
-    return prop(propertyName).map {
-        "${group}.${it}"
-    }
+fun propClass(propertyName: String): String? {
+    val prop = prop(propertyName) ?: return null
+    return "${group}.${prop}"
 }
