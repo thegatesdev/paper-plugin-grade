@@ -4,7 +4,6 @@ import com.mojang.brigadier.builder.*;
 import com.mojang.brigadier.tree.*;
 import io.papermc.paper.command.brigadier.*;
 
-@SuppressWarnings("UnstableApiUsage")
 public interface Command {
 
     static LiteralArgumentBuilder<CommandSourceStack> root() {
