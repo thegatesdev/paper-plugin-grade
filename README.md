@@ -1,6 +1,6 @@
-# Paper plugin template
+# Paper plugin Gradle template
 
-Template code for setting up a `1.21.8` Paper plugin.
+Template code for setting up a `1.21.8` Paper plugin with Gradle.
 
 I use this for my personal work.
 You may use it too, if you find it useful.
